@@ -1,9 +1,12 @@
 {
   "name": "quanlybaotri",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "private": true,
   "description": "App for quanlybaotri, powered by React Native",
   "main": "index.ts",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "android": "adb reverse tcp:8081 tcp:8081 && react-native run-android",
     "clean:android": "cd android && ./gradlew clean",
