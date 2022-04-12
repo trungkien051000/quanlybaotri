@@ -1,8 +1,8 @@
 {
-  "name": "expense_tracker",
+  "name": "quanlybaotri",
   "version": "0.0.3",
   "private": true,
-  "description": "App for Expense Tracker, powered by React Native",
+  "description": "App for quanlybaotri, powered by React Native",
   "main": "index.ts",
   "scripts": {
     "android": "adb reverse tcp:8081 tcp:8081 && react-native run-android",
@@ -22,7 +22,7 @@
   "author": "<trungkiendn2000@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/trungkien051000/quanlychitieu"
+    "url": "https://github.com/trungkien051000/quanlybaotri"
   },
   "license": "MIT",
   "dependencies": {
