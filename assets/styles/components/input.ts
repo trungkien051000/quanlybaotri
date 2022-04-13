@@ -5,7 +5,7 @@ import { themes } from '@utils/constants';
 const input = StyleSheet.create({
     input_container: {
         paddingHorizontal: 20,
-        borderRadius: 30,
+        borderRadius: 5,
         color: themes.COLOR.BLACK,
         backgroundColor: themes.COLOR.LIGHT_GRAY,
         width: '100%',

@@ -1,14 +1,12 @@
 const CLIENT = {
+    LOGIN: 'LOGIN',
     HOME: 'HOME',
-    CATEGORY: 'CATEGORY',
 };
 
 const API = {
     LOGIN: '/login',
-    MESSAGE: '/messages',
-    VEHICLE: '/vehicles',
     SETTING: '/settings',
-    LOCATION: '/locations',
+    HOME: '/HOME',
 };
 
 export { CLIENT, API };

@@ -46,8 +46,8 @@ const Input = forwardRef<TextInput, IInputComponentProps>((props, ref) => {
         <TextInput
             ref={ref}
             {...props}
-            style={[styles.input_container, styles.font_size_13, style]}
-            placeholderTextColor={themes.COLOR.WHITE}
+            style={[styles.input_container, styles.font_size_17, style]}
+            placeholderTextColor={themes.COLOR.DARK_GRAY}
             selectionColor={themes.COLOR.BLACK}
             onChangeText={(text: string) => handleDataChange(text)}
             onSubmitEditing={() => (onSubmitEditing ? onSubmitEditing() : {})}

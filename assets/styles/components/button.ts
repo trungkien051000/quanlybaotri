@@ -5,8 +5,8 @@ import { themes } from '@utils/constants';
 const button = StyleSheet.create({
     button_container: {
         paddingVertical: 15,
-        borderRadius: 36,
-        backgroundColor: themes.COLOR.BUTTON,
+        borderRadius: 25,
+        backgroundColor: themes.COLOR.BLUE,
         alignItems: 'center',
         justifyContent: 'center',
     },

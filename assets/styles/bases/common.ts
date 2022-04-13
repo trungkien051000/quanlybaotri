@@ -77,6 +77,9 @@ const common = StyleSheet.create({
     color_black: {
         color: themes.COLOR.BLACK,
     },
+    color_blue: {
+        color: themes.COLOR.BLUE,
+    },
     color_lightgray: {
         color: themes.COLOR.LIGHT_GRAY,
     },
@@ -88,6 +91,9 @@ const common = StyleSheet.create({
     },
     color_green: {
         color: themes.COLOR.GREEN,
+    },
+    color_transparent: {
+        color: themes.COLOR.TRANSPARENT,
     },
     width_25Percent: {
         width: '25%',
@@ -131,10 +137,27 @@ const common = StyleSheet.create({
     },
     border_red: {
         borderColor: themes.COLOR.RED,
-        borderWidth: 1,
+        borderWidth: 3,
+    },
+    borderBottom_gray: {
+        borderBottomColor: themes.COLOR.DARK_GRAY,
+        borderBottomWidth: 1,
+    },
+    borderBottom_red: {
+        borderBottomColor: themes.COLOR.RED,
+        borderBottomWidth: 1,
     },
     border_none: {
         borderWidth: 0,
+    },
+    background_white: {
+        backgroundColor: themes.COLOR.WHITE,
+    },
+    background_blue: {
+        backgroundColor: themes.COLOR.BLUE,
+    },
+    border_Radius10: {
+        borderRadius: 10,
     },
 });
 

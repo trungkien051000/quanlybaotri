@@ -7,6 +7,12 @@ const flexbox = StyleSheet.create({
     dFlex2: {
         flex: 2,
     },
+    dFlex4: {
+        flex: 4,
+    },
+    dFlex6: {
+        flex: 6,
+    },
     flexColum: {
         flexDirection: 'column',
     },

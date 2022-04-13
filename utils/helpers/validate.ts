@@ -8,8 +8,15 @@ export const isEmail = (value: string) => {
     return false;
 };
 
-export const isIp = (value: string) => {
-    if (regex.RULE.IP.test(value)) {
+export const isUser = (value: string) => {
+    if (regex.RULE.USER.test(value)) {
+        return true;
+    }
+    return false;
+};
+
+export const isPassword = (value: string) => {
+    if (regex.RULE.PASS.test(value)) {
         return true;
     }
     return false;
