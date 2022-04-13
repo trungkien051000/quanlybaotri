@@ -1,9 +1,9 @@
 export default {
     common: {},
-    home: {
-        title: 'Home',
+    schedule: {
+        title: 'Lịch bảo trì',
     },
-    input: {
+    login: {
         username: 'Tên đăng nhập',
         password: 'Mật khẩu',
         inputname: 'Nhập tên đăng nhập',
