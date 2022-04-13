@@ -1,12 +1,12 @@
 const CLIENT = {
     LOGIN: 'LOGIN',
-    HOME: 'HOME',
+    SCHEDULE: 'SCHEDULE',
 };
 
 const API = {
     LOGIN: '/login',
     SETTING: '/settings',
-    HOME: '/HOME',
+    SCHEDULE: '/SCHEDULE',
 };
 
 export { CLIENT, API };

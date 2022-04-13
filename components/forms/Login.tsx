@@ -27,29 +27,29 @@ const LoginForm: ILoginFormComponent<ILoginFormComponentProps> = (props) => {
     const usernameValidatorRef = createRef<IValidatorComponentHandle>();
     const passwordValidatorRef = createRef<IValidatorComponentHandle>();
 
-    const navigationHome = () => {
+    const navigationSchedule = () => {
         let isValidate = true;
         if (username === '') {
-            usernameValidatorRef.current?.onValidateMessage(trans.input.err_inputUsername);
+            usernameValidatorRef.current?.onValidateMessage(trans.login.err_inputUsername);
             isValidate = false;
         } else if (!validateHelper.isUser(username)) {
-            usernameValidatorRef.current?.onValidateMessage(trans.input.err_formatUsername);
+            usernameValidatorRef.current?.onValidateMessage(trans.login.err_formatUsername);
             isValidate = false;
         } else {
             usernameValidatorRef.current?.onValidateMessage('');
         }
 
         if (!password) {
-            passwordValidatorRef.current?.onValidateMessage(trans.input.err_inputPassword);
+            passwordValidatorRef.current?.onValidateMessage(trans.login.err_inputPassword);
             isValidate = false;
         } else if (!validateHelper.isPassword(password)) {
-            passwordValidatorRef.current?.onValidateMessage(trans.input.err_formattPassword);
+            passwordValidatorRef.current?.onValidateMessage(trans.login.err_formattPassword);
             isValidate = false;
         } else {
             passwordValidatorRef.current?.onValidateMessage('');
         }
         if (isValidate) {
-            navigation?.navigate(routes.CLIENT.HOME);
+            navigation?.navigate(routes.CLIENT.SCHEDULE);
         }
     };
 
@@ -64,22 +64,22 @@ const LoginForm: ILoginFormComponent<ILoginFormComponentProps> = (props) => {
         <View style={[styles.dFlex1, styles.background_white, styles.border_Radius10, styles.padding10]}>
             <KeyboardAwareScrollView>
                 <View style={[styles.dFlex4, styles.marginVertical15]}>
-                    <View style={[styles.dFlex1, styles.justifyCenter, styles.alignItemsCenter]}>
-                        <Text style={[styles.font_size_30, styles.font_weight_bold]}>{trans.input.login}</Text>
+                    <View style={[styles.dFlex1, styles.justifyCenter, styles.alignItemsCenter, styles.margin15]}>
+                        <Text style={[styles.font_size_30, styles.font_weight_bold]}>{trans.login.login}</Text>
                     </View>
 
                     {/* body */}
-                    <View style={styles.dFlex2}>
+                    <View style={[styles.dFlex2, styles.marginTop20]}>
                         <Validator ref={usernameValidatorRef}>
                             <View>
-                                <Text>{trans.input.username}</Text>
+                                <Text>{trans.login.username}</Text>
                                 <View style={[styles.flexRow, styles.borderBottom_gray]}>
                                     <View style={[styles.justifyCenter, styles.alignItemsCenter]}>
                                         <Image source={images.ICON_USER} />
                                     </View>
                                     <Input
                                         style={[styles.login_input]}
-                                        placeholder={trans.input.inputname}
+                                        placeholder={trans.login.inputname}
                                         value={username}
                                         onChangeText={(data) => {
                                             handleChangeData('username', data);
@@ -90,13 +90,13 @@ const LoginForm: ILoginFormComponent<ILoginFormComponentProps> = (props) => {
                         </Validator>
                         <Validator ref={passwordValidatorRef}>
                             <View style={[styles.marginTop15]}>
-                                <Text>{trans.input.password}</Text>
+                                <Text>{trans.login.password}</Text>
                                 <View style={[styles.flexRow, styles.borderBottom_gray]}>
                                     <View style={[styles.justifyCenter, styles.alignItemsCenter]}>
                                         <Image source={images.ICON_PASSWORD} />
                                     </View>
                                     <Input
-                                        placeholder={trans.input.inputpassword}
+                                        placeholder={trans.login.inputpassword}
                                         style={[styles.login_input]}
                                         value={password}
                                         onChangeText={(data) => {
@@ -108,14 +108,14 @@ const LoginForm: ILoginFormComponent<ILoginFormComponentProps> = (props) => {
                             </View>
                         </Validator>
                         <View style={[styles.marginTop10, styles.alignItemsEnd]}>
-                            <Text>{trans.input.forgotpassword}</Text>
+                            <Text>{trans.login.forgotpassword}</Text>
                         </View>
 
                         <Button
                             style={[styles.marginTop34]}
                             styleText={[styles.font_size_17]}
-                            text={trans.input.login}
-                            onPress={navigationHome}
+                            text={trans.login.login}
+                            onPress={navigationSchedule}
                         />
                     </View>
                 </View>

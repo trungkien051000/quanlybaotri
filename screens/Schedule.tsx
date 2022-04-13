@@ -3,10 +3,10 @@ import { Text } from 'react-native';
 
 import { useTrans } from '@utils/hooks';
 
-const Home: IHomeScreen<IHomeScreenProps> = () => {
+const Schedule: IScheduleScreen<IScheduleScreenProps> = () => {
     const trans = useTrans();
 
-    return <Text>{trans.home.title}</Text>;
+    return <Text>{trans.schedule.title}</Text>;
 };
 
-export default Home;
+export default Schedule;

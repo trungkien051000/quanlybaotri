@@ -9,7 +9,7 @@ const navbar = StyleSheet.create({
         paddingHorizontal: 22,
     },
     navbar_container: {
-        height: 57,
+        height: 37,
     },
     navbar_icon: {
         width: 24,

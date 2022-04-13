@@ -5,7 +5,6 @@ import { themes } from '@utils/constants';
 const container = StyleSheet.create({
     container: {
         padding: 10,
-        marginTop: 12,
         backgroundColor: themes.COLOR.WHITE,
         fontWeight: '400',
         fontFamily: themes.FONT.ROBOTO.REGULAR,

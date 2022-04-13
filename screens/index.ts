@@ -1,5 +1,5 @@
 import Category from './Category';
-import Home from './Home';
+import Schedule from './Schedule';
 import Login from './Login';
 
-export { Home, Category, Login };
+export { Schedule, Category, Login };
