@@ -5,3 +5,4 @@ export const SET_MODAL = 'set_modal';
 export const SET_TOAST = 'set_toast';
 export const SET_NAVBAR_SUBMIT = 'set_navbar_submit';
 export const SET_NAVBAR_BACK = 'set_navbar_back';
+export const SET_NAVBAR_MENU = 'set_navbar_menu';

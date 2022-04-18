@@ -3,6 +3,7 @@ interface IBaseScreenProps {
     navigation?: {
         navigate: (routeName: string) => void;
         goBack: () => void;
+        openDrawer: () => void;
     };
 }
 

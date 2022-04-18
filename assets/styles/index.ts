@@ -5,10 +5,9 @@ import container from './bases/container';
 
 import button from './components/button';
 import input from './components/input';
-import navbar from './components/navbar';
 import modal from './components/modal';
 import loader from './components/loader';
 import home from './screens/home';
 import login from './screens/login';
 
-export { flexbox, spacing, common, container, button, input, navbar, modal, loader, home, login };
+export { flexbox, spacing, common, container, button, input, modal, loader, home, login };
