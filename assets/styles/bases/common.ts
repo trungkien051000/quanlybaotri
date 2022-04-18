@@ -95,9 +95,6 @@ const common = StyleSheet.create({
     color_transparent: {
         color: themes.COLOR.TRANSPARENT,
     },
-    // textColor_gray:{
-    //     textColor: themes.COLOR.GRAY,
-    // },
     width_25Percent: {
         width: '25%',
     },
