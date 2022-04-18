@@ -1,6 +1,8 @@
 const CLIENT = {
     LOGIN: 'LOGIN',
+    SETTING: 'SETTING',
     SCHEDULE: 'SCHEDULE',
+    SCHEDULEDRAWER: 'SCHEDULEDRAWER',
 };
 
 const API = {

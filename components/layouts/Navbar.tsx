@@ -1,12 +1,16 @@
-import { common, flexbox, navbar, spacing } from '@assets/styles';
+import React from 'react';
+import { images } from '@utils/constants';
+import { ImageBackground, SafeAreaView, StyleSheet, View } from 'react-native';
+
 import Button from '@components/commons/Button';
 import TextView from '@components/commons/TextView';
 import Loader from '@components/layouts/Loader';
 import Modal from '@components/layouts/Modal';
-import { images } from '@utils/constants';
-import React from 'react';
-import { ImageBackground, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
+import { setNavbarBack, setNavbarMenu } from '@redux/actions';
+import { useDispatch } from 'react-redux';
+
+import { common, flexbox, navbar, spacing } from '@assets/styles';
 const styles = StyleSheet.create({
     ...flexbox,
     ...common,
@@ -14,7 +18,20 @@ const styles = StyleSheet.create({
     ...navbar,
 });
 const Navbar: INavbarComponent<INavbarComponentProps> = (props) => {
-    const { isShowMenu, title } = props;
+    const dispatch = useDispatch();
+    const { isShowMenu, isHandleBack, title, navigation } = props;
+
+    const handleNavbarMenu = () => {
+        dispatch(setNavbarMenu(true));
+    };
+
+    const handleNavbarBack = () => {
+        if (isHandleBack) {
+            dispatch(setNavbarBack(true));
+        } else {
+            navigation?.goBack();
+        }
+    };
     return (
         <SafeAreaView>
             <Modal />
@@ -26,6 +43,7 @@ const Navbar: INavbarComponent<INavbarComponentProps> = (props) => {
                             icon={images.ICON_MENU}
                             style={[styles.navbar_icon_back, styles.marginLeft12]}
                             styleIcon={[styles.navbar_icon, styles.alignItemsEnd]}
+                            onPress={() => handleNavbarMenu()}
                         />
                     </View>
                 )}
