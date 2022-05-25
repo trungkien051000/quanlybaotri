@@ -92,6 +92,9 @@ const common = StyleSheet.create({
     color_green: {
         color: themes.COLOR.GREEN,
     },
+    color_orange: {
+        color: themes.COLOR.ORANGE,
+    },
     color_transparent: {
         color: themes.COLOR.TRANSPARENT,
     },
@@ -149,6 +152,9 @@ const common = StyleSheet.create({
     },
     border_none: {
         borderWidth: 0,
+    },
+    background_none: {
+        backgroundColor: 'transparent',
     },
     background_white: {
         backgroundColor: themes.COLOR.WHITE,

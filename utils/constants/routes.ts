@@ -1,5 +1,6 @@
 const CLIENT = {
     LOGIN: 'LOGIN',
+    SIGNUP: 'SIGNUP',
     SETTING: 'SETTING',
     SCHEDULE: 'SCHEDULE',
     SCHEDULEDRAWER: 'SCHEDULEDRAWER',
@@ -7,6 +8,7 @@ const CLIENT = {
 
 const API = {
     LOGIN: '/login',
+    SIGNUP: '/signup',
     SETTING: '/settings',
     SCHEDULE: '/SCHEDULE',
 };

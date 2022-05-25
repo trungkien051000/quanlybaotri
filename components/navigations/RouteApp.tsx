@@ -3,7 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { StyleSheet } from 'react-native';
 
-import { Login, Schedule, Remind, Book, Setting } from '@screens/index';
+import { Login, Schedule, Remind, Book, Setting, SignUp } from '@screens/index';
 
 import { routes, themes } from '@utils/constants';
 import { useTrans } from '@utils/hooks';
@@ -53,6 +53,13 @@ const RouteApp: IRouteAppComponent<IRouteAppComponentProps> = ({ startScreen }) 
             <RootApp.Screen
                 name={routes.CLIENT.LOGIN}
                 component={Login}
+                options={{
+                    headerShown: false,
+                }}
+            />
+            <RootApp.Screen
+                name={routes.CLIENT.SIGNUP}
+                component={SignUp}
                 options={{
                     headerShown: false,
                 }}

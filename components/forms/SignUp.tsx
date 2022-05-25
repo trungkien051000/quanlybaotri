@@ -15,15 +15,16 @@ const styles = StyleSheet.create({
     ...spacing,
     ...login,
 });
-const LoginForm: ILoginFormComponent<ILoginFormComponentProps> = (props) => {
+const SignUpForm: ISignUpFormComponent<ISignUpFormComponentProps> = (props) => {
     const { navigation } = props;
     const trans = useTrans();
 
-    const [state, setState] = useState<ILoginFormComponentState>({
+    const [state, setState] = useState<ISignUpFormComponentState>({
         username: '',
         password: '',
+        passwordconfirm: '',
     });
-    const { username, password } = state;
+    const { username, password, passwordconfirm } = state;
     const usernameValidatorRef = createRef<IValidatorComponentHandle>();
     const passwordValidatorRef = createRef<IValidatorComponentHandle>();
 
@@ -141,4 +142,4 @@ const LoginForm: ILoginFormComponent<ILoginFormComponentProps> = (props) => {
     );
 };
 
-export default LoginForm;
+export default SignUpForm;

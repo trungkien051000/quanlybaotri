@@ -16,8 +16,8 @@ export default {
         inputpassword: 'Nhập mật khẩu',
         login: 'Đăng nhập',
         signup: 'Đăng ký',
-        anotherlogin: 'Hoặc đang nhập với',
         forgotpassword: 'Quên mật khẩu?',
+        text_register: 'Chưa có tài khoản?',
         err_inputUsername: 'Vui lòng nhập tên đăng nhập',
         err_inputPassword: 'Vui lòng nhập mật khẩu',
         err_formatUsername:
