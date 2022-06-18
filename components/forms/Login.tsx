@@ -43,7 +43,7 @@ const LoginForm: ILoginFormComponent<ILoginFormComponentProps> = (props) => {
             passwordValidatorRef.current?.onValidateMessage(trans.login.err_inputPassword);
             isValidate = false;
         } else if (!validateHelper.isPassword(password)) {
-            passwordValidatorRef.current?.onValidateMessage(trans.login.err_formattPassword);
+            passwordValidatorRef.current?.onValidateMessage(trans.login.err_formatPassword);
             isValidate = false;
         } else {
             passwordValidatorRef.current?.onValidateMessage('');
@@ -130,7 +130,7 @@ const LoginForm: ILoginFormComponent<ILoginFormComponentProps> = (props) => {
                                     style={[styles.background_none, styles.justifyStart]}
                                     styleText={[styles.color_red, styles.font_weight_regular]}
                                     text={trans.login.signup}
-                                    onPress={navigationSchedule}
+                                    onPress={() => navigation?.navigate(routes.CLIENT.SIGNUP)}
                                 />
                             </View>
                         </View>

@@ -45,6 +45,42 @@ const Schedule: IScheduleScreen<IScheduleScreenProps> = () => {
             TieuDe: 'Sửa chữa vòi đánh sữa',
             MoTa: 'abc',
         },
+        {
+            MaBaoTri: 7,
+            TenNhanVien: 'Lê Trương Bảo',
+            TenKhachHang: 'Ngô Minh Hiếu',
+            Thietbi: 'Máy Melitta Caffeo Passione',
+            TienDo: '50%',
+            TieuDe: 'Sửa chữa vòi đánh sữa',
+            MoTa: 'abc',
+        },
+        {
+            MaBaoTri: 7,
+            TenNhanVien: 'Lê Trương Bảo',
+            TenKhachHang: 'Ngô Minh Hiếu',
+            Thietbi: 'Máy Melitta Caffeo Passione',
+            TienDo: '50%',
+            TieuDe: 'Sửa chữa vòi đánh sữa',
+            MoTa: 'abc',
+        },
+        {
+            MaBaoTri: 7,
+            TenNhanVien: 'Lê Trương Bảo',
+            TenKhachHang: 'Ngô Minh Hiếu',
+            Thietbi: 'Máy Melitta Caffeo Passione',
+            TienDo: '50%',
+            TieuDe: 'Sửa chữa vòi đánh sữa',
+            MoTa: 'abc',
+        },
+        {
+            MaBaoTri: 7,
+            TenNhanVien: 'Lê Trương Bảo',
+            TenKhachHang: 'Ngô Minh Hiếu',
+            Thietbi: 'Máy Melitta Caffeo Passione',
+            TienDo: '50%',
+            TieuDe: 'Sửa chữa vòi đánh sữa',
+            MoTa: 'abc',
+        },
     ]);
 
     return (

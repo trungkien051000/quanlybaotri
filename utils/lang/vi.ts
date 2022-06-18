@@ -1,10 +1,27 @@
 export default {
-    common: {},
+    common: {
+        locale: 'vi',
+        confirm: 'Xác nhận',
+        ok: 'Xác nhận',
+        cancel: 'Hủy',
+        dateTitle: 'Chọn ngày',
+        timeTitle: 'Chọn giờ',
+        dateTimeConfirm: 'Xác nhận',
+        dateTimeCancel: 'Hủy',
+    },
     remind: {
         title: 'Nhắc hẹn bảo trì',
     },
     book: {
         title: 'Đặt lịch bảo trì',
+        tieude: 'Tiêu đề',
+        mota: 'Mô tả',
+        doanhnghiep: 'Doanh nghiệp',
+        diachi: 'Địa chỉ',
+        pickdate: 'Chọn ngày đặt lịch',
+        message_confirm: 'Xin vui lòng xác nhận đặt lịch',
+        err_inputTieuDe: 'Vui lòng nhập tiêu đề',
+        err_inputMoTa: 'Vui lòng nhập mô tả',
     },
     schedule: {
         title: 'Lịch bảo trì',
@@ -22,7 +39,22 @@ export default {
         err_inputPassword: 'Vui lòng nhập mật khẩu',
         err_formatUsername:
             'Tên đăng nhập sẽ bắt đầu bởi bất kỳ chữ cái viết thường (a-z), số (0-9), dấu gạch dưới hoặc dấu gạch nối. Tiếp theo, {3,16} đảm bảo có ít nhất 3 trong số các ký tự đó, nhưng không quá 16.',
-        err_formattPassword: 'Mật khẩu tối thiểu tám ký tự, ít nhất một chữ cái và một số',
+        err_formatPassword: 'Mật khẩu tối thiểu tám ký tự, ít nhất một chữ cái và một số',
+    },
+    signup: {
+        signup: 'Đăng ký',
+        username: 'Tên đăng nhập',
+        password: 'Mật khẩu',
+        passwordconfirm: 'Nhập lại mật khẩu',
+        inputname: 'Nhập tên đăng nhập',
+        inputpassword: 'Nhập mật khẩu',
+        inputpasswordconfirm: 'Nhập lại mật khẩu',
+        err_inputUsername: 'Vui lòng nhập tên đăng nhập',
+        err_inputPassword: 'Vui lòng nhập mật khẩu',
+        err_formatUsername:
+            'Tên đăng nhập sẽ bắt đầu bởi bất kỳ chữ cái viết thường (a-z), số (0-9), dấu gạch dưới hoặc dấu gạch nối. Tiếp theo, {3,16} đảm bảo có ít nhất 3 trong số các ký tự đó, nhưng không quá 16.',
+        err_formatPassword: 'Mật khẩu tối thiểu 8 ký tự, ít nhất một chữ cái và một số',
+        err_formatPasswordConfirm: 'Mật khẩu không đúng',
     },
     setting: {
         title: 'Cài đặt',
@@ -34,5 +66,9 @@ export default {
         address: 'Địa chỉ',
         phone: 'Số điện thoại',
         lang: 'Ngôn ngữ',
+        save: 'Lưu',
+        text_radiobutton_lang: 'Ngôn ngữ',
+        radiobutton_langvi: 'Tiếng Việt',
+        radiobutton_langen: 'Tiếng Anh',
     },
 };
