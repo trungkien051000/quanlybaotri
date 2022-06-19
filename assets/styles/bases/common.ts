@@ -51,6 +51,10 @@ const fontSize = {
         fontSize: themes.FONT.SIZE_24,
         lineHeight: themes.FONT.SIZE_24 + 4,
     },
+    font_size_27: {
+        fontSize: themes.FONT.SIZE_27,
+        lineHeight: themes.FONT.SIZE_27 + 4,
+    },
     font_size_30: {
         fontSize: themes.FONT.SIZE_30,
         lineHeight: themes.FONT.SIZE_30 + 4,

@@ -272,3 +272,4 @@ const Book: IBookScreen<IBookScreenProps> = (props) => {
         </ScrollView>
     );
 };
+export default Book;

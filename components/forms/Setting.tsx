@@ -8,7 +8,7 @@ import { ReduxStates } from '@redux/reducers';
 import { enums } from '@utils/constants';
 import { useTrans } from '@utils/hooks';
 import React, { createRef, useState } from 'react';
-import { StyleSheet, TextInput, View } from 'react-native';
+import { StyleSheet, TextInput, ToastAndroid, View } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -28,7 +28,9 @@ const SettingForm: ISettingFormComponent<ISettingFormComponentProps> = (props) =
         settingData: setting,
         oldSettingData: setting,
     });
-
+    const showToast = () => {
+        ToastAndroid.show('Bạn đã cập nhật thành công !', ToastAndroid.LONG);
+    };
     const { settingData, oldSettingData } = state;
     const usernameValidatorRef = createRef<IValidatorComponentHandle>();
     const passwordValidatorRef = createRef<IValidatorComponentHandle>();
@@ -193,7 +195,7 @@ const SettingForm: ISettingFormComponent<ISettingFormComponentProps> = (props) =
                 />
             </View>
 
-            <Button text={trans.setting.save} style={[styles.marginTop34]} styleText={[styles.font_size_17]} />
+            <Button text={trans.setting.save} style={[styles.marginTop34]} styleText={[styles.font_size_17]} onPress={() => showToast()} />
         </KeyboardAwareScrollView>
     );
 };

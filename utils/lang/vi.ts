@@ -8,6 +8,8 @@ export default {
         timeTitle: 'Chọn giờ',
         dateTimeConfirm: 'Xác nhận',
         dateTimeCancel: 'Hủy',
+        save: 'Lưu',
+        logout: 'Đăng xuất',
     },
     remind: {
         title: 'Nhắc hẹn bảo trì',
@@ -25,6 +27,22 @@ export default {
     },
     schedule: {
         title: 'Lịch bảo trì',
+    },
+    detailSchedule: {
+        title: 'Chi tiết bảo trì',
+        MaBaoTri: 'Mã bảo trì',
+        TieuDe: 'Tiêu đề',
+        MoTa: 'Mô tả',
+        ThietBi: 'Thiết bị',
+        NhanVien: 'Nhân viên',
+        KhachHang: 'Khách hàng',
+        DiaChi: 'Địa chỉ',
+        NgayBatDau: 'Ngày bắt đầu',
+        NgayKetThuc: 'Ngày kết thúc',
+        NgayHoanThanh: 'Ngày hoàn thành',
+        TienDo: 'Tiến độ',
+        TrangThai: 'Trạng thái',
+        BinhLuan: 'Bình luận',
     },
     login: {
         username: 'Tên đăng nhập',
